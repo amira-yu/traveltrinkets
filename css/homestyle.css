@@ -1,0 +1,306 @@
+/* h1 {
+    color:red;
+    font-family:cursive;
+    font-size:4em;
+}
+h2 {
+    color:darkgrey;
+    font-family:impact;
+    font-size:1.25em;
+} */
+
+
+/* asterik is to override the default root of the document*/
+*{
+    background-color: #fcedc9;
+    position: relative;
+    /* width: 80vw; */
+    /* margin: 5vw; */
+    scroll-behavior: smooth;
+}
+
+div.relative {
+    position: relative;
+    border: 2px blue;
+    background-color: red;
+}
+
+div.relative {
+    position: absolute;
+    border: 2px blue;
+    background-color: red;
+}
+
+div.absolute {
+    position: absolute;
+    right: 0px;
+    height: 200px;
+    width: 200px;
+    border: 4px blue;
+}
+
+.relative {
+    position: relative;
+}
+
+.fixed {
+    position: fixed;
+    top: 40%;
+    right: 15%;
+}
+
+.fixed-2 {
+    position: fixed;
+    top: 40%;
+    left: 15%;
+}
+
+/* button {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translateX(-50%);
+    width: 200px;
+    height:90px;
+    border-radius: 1rem;
+    padding: 5%;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    border-radius: 1rem;
+    padding: 5%;
+} */
+
+/* #test { color:blueviolet
+
+} */
+
+
+/*making comment in css*/
+    h1 {
+        text-align: center;
+        color:rgb(0, 0, 0);
+        font-family:'MonaspaceArgon-Bold';
+    }
+
+    h2 {
+        color:rgb(0, 0, 0);
+        font-family:'MonaspaceArgon-Bold';
+        font-size:1.25em;
+    }
+
+    h4 {
+        font-family:'MonaspaceArgon-Bold';
+    }
+
+    p {
+        font-family: 'Trebuchet MS';
+    }
+
+/* images*/
+    
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .logo {
+        width: 40%;
+        height: auto;
+        margin-right: 20%;
+        margin-left: 30%;
+    }
+
+    .logo2 {
+        width: 20%;
+        height: auto;
+    }
+
+    /* .image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        max-height: 100%;
+    } */
+
+
+    /* buttons */
+    #controls {
+        margin-bottom: 20px;
+    }
+    
+    input, button, select {
+        margin: 5px;
+        padding: 10px;
+        font-size: 14px;
+        font-family: 'MonaspaceArgon-Bold';
+    }
+    
+    button {
+        background-color: #00489c;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        /* font-weight: bold; */
+        color: white;
+        transition: background 0.3s ease;
+    }
+    
+    button:hover {
+        background-color: #2166b4;
+    }
+    
+    @font-face {
+        font-family:'MonaspaceArgon-Bold';
+        src:url('../fonts/MonaspaceArgon-Bold.woff') format('woff'),
+            url('../fonts/MonaspaceArgon-Bold.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family:'MonaspaceArgon-Regular';
+        src:url('../fonts/MonaspaceArgon-Regular.woff') format('woff'),
+            url('../fonts/MonaspaceArgon-Regular.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    .header {
+        padding: 10px;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+      }
+
+    .footer {
+        padding: 10px;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+      }
+
+/* this is for acorn trinket page */
+    .flex-container {
+        display: flex;
+        /* flex-direction: column;
+        grid-template-columns: repeat (3, 1fr); */
+        flex-wrap: wrap;
+        /* border: 1px solid */
+        padding: 10px;
+      }
+      
+    .flex-container > div {
+        /* background-color: #f1f1f1; */
+        width: 25vw;
+        /* margin: 1px; */
+        text-align: left;
+        padding: 10px;
+      }
+
+/* this is for  page */ 
+    .flex-container1 {
+        display: flex;
+        /* flex-direction: column;
+        grid-template-columns: repeat (3, 1fr); */
+        flex-wrap: wrap;
+        /* border: 1px solid */
+      }
+      
+    .flex-container1 > div {
+        width: 80vw;
+        text-align: left;
+      }
+
+/* this is for secondary pages (navigate between countries and trinket type) */
+    .flex-container2 {
+        display: flex;
+        /* flex-direction: column;
+        grid-template-columns: repeat (3, 1fr); */
+        flex-wrap: wrap;
+        /* border: 1px solid */
+      }
+      
+    .flex-container2 > div {
+        width: 20vw;
+        text-align: center;
+        padding: 10px;
+      }
+
+/* this is for home page */
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        /* background-color: dodgerblue; */
+        padding: 10px;
+        margin-left: 20%;
+        margin-right: 20%;
+      }
+      
+    .grid-container > div {
+        color:#000;
+        padding: 10px;
+      }
+      
+      .item1 {
+        grid-column: 1 / span 2;
+      }
+      
+      .item2 {
+        grid-column: 1 / span 1;
+      }
+      
+      .item4 {
+        grid-column: 1 / span 2;
+      }
+      
+ 
+    .grid-container2 {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+        /* background-color: dodgerblue; */
+        padding: 10px;
+        margin-left: 20%;
+        margin-right: 20%;
+      }
+      
+    .grid-container2 > div {
+        color:#000;
+        padding: 10px;
+      }
+
+/* mobile/tablet: this comment is to organize my css declaration blocks for responsive up to 800px, defining maximum pixel amount of 800*/
+    @media (max-width: 800px) {
+        h1 {
+            font-size: 2rem;
+        }
+    }
+
+/* desktop breakpoint for minimum of 801, everything larger than a tablet */
+    @media (min-width: 801px) {
+        h1 {
+            font-size: 6rem;
+        }
+    }
+/* 
+    @media (min-width: 801px) {
+            .flex-container{
+                margin: 0 10vw 0 10vw;
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    @media (min-width: 801px) {
+        p{
+            padding-right: 2rem;
+        }
+    } */
+
+
+
+
