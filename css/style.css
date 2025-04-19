@@ -80,6 +80,7 @@ button {
 
 
 /*making comment in css*/
+/* text elements */
     h1 {
         text-align: center;
         color:rgb(0, 0, 0);
@@ -97,13 +98,29 @@ button {
     }
 
     p {
-        font-family: 'Trebuchet MS';
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        line-height: 140%;
+    }
+
+    /* pertaining to unordered lists */
+    ul {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
 /* images*/
     
     img {
         width: 100%;
+        height: auto;
+    }
+
+    /* img.pic {
+        position: relative;
+        z-index: -1;
+    } */
+
+    .tea {
+        width: 50%;
         height: auto;
     }
 
@@ -151,8 +168,39 @@ button {
     }
     
     button:hover {
-        background-color: #2166b4;
+        background-color: #366dac;
     }
+
+/* all the css used for navbar */
+    .navbar ul {
+        list-style-type: none;
+        background-color: #00489c;
+        overflow: hidden;
+        padding: 0px;
+        margin: 0px;
+        display: inline-flexbox;
+
+    }
+
+    .navbar a {
+        color: white;
+        background-color: #00489c;
+        text-decoration: none;
+        padding: 20px;
+        display: block;
+        text-align: center;
+    }
+
+    .navbar a:hover {
+        transition: background 0.3s ease;
+        background-color: #366dac;
+    }
+
+    .navbar li {
+        float: left;
+    }
+
+
     
     @font-face {
         font-family:'MonaspaceArgon-Bold';
@@ -171,58 +219,67 @@ button {
     }
 
     .header {
+        position: sticky;
         padding: 10px;
         text-align: center;
-        color: white;
+        /* color: white; */
         font-size: 30px;
       }
 
     .footer {
-        padding: 10px;
+        padding-top: 5px;
         text-align: center;
-        color: white;
-        font-size: 30px;
+        background-color: #e9d5a7;
+        font-size: 13px;
+        font-family: 'MonaspaceArgon-Bold';
       }
 
-/* this is for acorn trinket page */
+/* this is how many pages are organized, including acorn, philosopher's path, asakusa trinket page to name a few*/
     .flex-container {
         display: flex;
+        justify-content: center;
+        align-content: center;
         /* flex-direction: column;
         grid-template-columns: repeat (3, 1fr); */
         flex-wrap: wrap;
         /* border: 1px solid */
         padding: 10px;
+        background-color: DodgerBlue;
       }
       
     .flex-container > div {
-        /* background-color: #f1f1f1; */
+        background-color: DodgerBlue;
         width: 25vw;
         /* margin: 1px; */
         text-align: left;
         padding: 10px;
       }
 
-/* this is for  page */ 
+/* this is for the footer, split into two sections one to display contact information and the rest to display a */ 
     .flex-container1 {
         display: flex;
         /* flex-direction: column;
         grid-template-columns: repeat (3, 1fr); */
-        flex-wrap: wrap;
+        align-items: stretch;
         /* border: 1px solid */
+        background-color: DodgerBlue;
       }
       
     .flex-container1 > div {
+        margin: 25px;
         width: 80vw;
-        text-align: left;
+        text-align: center;
+        
       }
 
-/* this is for secondary pages (navigate between countries and trinket type) */
+/* this is for secondary pages,(navigate between countries and trinket type) */
     .flex-container2 {
         display: flex;
         /* flex-direction: column;
         grid-template-columns: repeat (3, 1fr); */
         flex-wrap: wrap;
         /* border: 1px solid */
+        background-color: DodgerBlue;
       }
       
     .flex-container2 > div {
@@ -236,7 +293,7 @@ button {
         display: grid;
         grid-template-columns: auto auto;
         gap: 10px;
-        /* background-color: dodgerblue; */
+        background-color: dodgerblue;
         padding: 10px;
         margin-left: 20%;
         margin-right: 20%;
@@ -245,6 +302,7 @@ button {
     .grid-container > div {
         color:#000;
         padding: 10px;
+        text-align: center;
       }
       
       .item1 {
@@ -257,14 +315,27 @@ button {
       
       .item4 {
         grid-column: 1 / span 2;
+
       }
-      
- 
+    
+
+/* right and two rows in length */
+      .item5 {
+        grid-column: 1 / span 2;
+      }
+
+/* Left and two columns in height */ 
+      .item6 {
+        grid-column: 3;
+        grid-row: 1 / span 2;
+      }
+
+ /* this is an alternative grid container layout*/
     .grid-container2 {
         display: grid;
         grid-template-columns: auto auto auto auto;
         gap: 10px;
-        /* background-color: dodgerblue; */
+        background-color: dodgerblue;
         padding: 10px;
         margin-left: 20%;
         margin-right: 20%;
@@ -302,5 +373,16 @@ button {
     } */
 
 
+/* This website was made using help and guidance from 
+    Professor Chris Lange,
+    My friends, Sho, Ayoung, Michael, Kristy & Ethan 
+    W3 Schools
+        https://www.w3schools.com/css/css3_flexbox_items.asp
+        https://www.w3schools.com/css/css_grid_item.asp
+    Youtube tutorials
+        https://www.youtube.com/watch?v=f3uCSh6LIY0&ab_channel=BroCode
+        https://youtu.be/vBTkyGeiW4A?si=6RHiVjXHR0s2jRfK
+        https://www.youtube.com/watch?app=desktop&v=Y5TYDo9Qcv4&ab_channel=KevinPowell
 
+    */
 
