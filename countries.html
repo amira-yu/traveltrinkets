@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>countries</title>
+    <title>Countries</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<!-- header -->
     <div class="header">
         <div class="container">
             <div class="logo2">
@@ -16,14 +17,68 @@
             </div>
         </div>
     </div>
+<!-- navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="trinkets.html">Trinkets</a></li>
+            <li><a href="countries.html">Countries</a></li>
+        </ul>
+    </nav>    
     <h1>Countries</h1>
 
-    <div id="controls">
-        <button type="absolute" onclick="location.href='countries.html'">Japan</button>
-        <button type="absolute" onclick="location.href='trinkets.html'">Taiwan</button>
-        <button type="absolute" onclick="location.href='trinkets.html'">South Korea</button>
-        <button type="absolute" onclick="location.href='trinkets.html'">Italy</button>
+
+    <div class=" flex-container2">
+        <div>
+            <div id="controls">
+                <a href="japan.html">
+                <img src="images/japan.jpg" alt="an image of kiyomizu-dera pagoda in Kyoto Japan with leaves in the foreground">
+                </a>
+                <button type="absolute" onclick="location.href='japan.html'">Japan</button>
+            </div>
+        </div>
+
+        <div>
+            <div id="controls">
+                <a href="taiwan">
+                <img src="images/taiwan.jpg" alt="an image of a night market in taiwan, in the foreground there are mopeds and in the back there are food stalls">
+                </a>
+                <button type="absolute" onclick="location.href='taiwan.html'">Taiwan</button>
+            </div>
+        </div>
+
+        <div>
+            <div id="controls">
+                <a href="southkorea.html">
+                <img src="images/southkorea.jpg" alt="an image of Coex Mall Starfield Library in seoul, south korea, in the foreground there is an artificial tree created by wood planks and it's decorate with fake colourful flowers ">
+                </a>
+                <button type="absolute" onclick="location.href='southkorea.html'">South Korea</button>
+            </div>
+        </div>
+        
+        <div>
+            <div id="controls">
+                <a href="italy.html">
+                <img src="images/italy.jpg" alt="an image of Ponte Vecchio located in florence italy">
+                </a>
+                <button type="absolute" onclick="location.href='italy.html'">Italy</button>
+            </div>
+        </div>
+
+        <p>
+           Image credit: Amira Yu
+        </p>
+    </div>
+<!-- footer -->
+    <div>
+        <div class="footer">
+            <div class="flex-container1">
+                <div style="flex-basis:20%">Contact: amirayu@ocadu.ca</div>
+                <div style="flex-basis:80%">All content has been collected, TravelTrinkets does not claim to be the owner and producer of any of the material on the site.</div>
+            </div>
+        </div>
     </div>
 
 </body>
 </html>
+
